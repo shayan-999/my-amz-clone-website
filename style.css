@@ -217,8 +217,8 @@ h2{
     font-weight: 700;
 }
 .box-img{
-    height: 390px;
-    background-size: contain;
+    height: 350px;
+    background-size: cover;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
     background-repeat: no-repeat;

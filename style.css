@@ -363,7 +363,7 @@ ul a{
    align-items: center;
 }
 .fp-logo{
-    background-image: url('images/amz_logo.png');
+   background-image: url('images/amz_logo.png');
     height: 35px;
     width: 100px;
     background-size:cover;

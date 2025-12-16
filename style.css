@@ -167,7 +167,7 @@ span{
 
 /* hero section */
 .hero-section{
-    background-image: url(images/amz_hbg.jpg);
+    background-image: url('images/amz_hbg.jpg');
     height: 350px;
     background-size: cover;
     display: flex;
@@ -214,7 +214,7 @@ a{
     font-size: 17px;
 }
 h2{
-    font-weight: 200;
+    font-weight: 700;
 }
 .box-img{
     height: 350px;
@@ -229,7 +229,9 @@ h2{
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
+.box-content p a{
+    cursor: pointer;
+}
 /* box 5 */
 .box5{
       border: 2px solid white;
@@ -363,7 +365,7 @@ ul a{
    align-items: center;
 }
 .fp-logo{
-   background-image: url('images/amz_logo.png');
+    background-image: url('images/amz_Logo.png');
     height: 35px;
     width: 100px;
     background-size:cover;
@@ -431,4 +433,108 @@ ul a{
 .copyright{
     font-size: 16px;
     margin-top: 5px;
+}
+
+/* For responsive design  */
+
+@media(max-width:768px){
+    html,body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        flex-wrap:wrap;
+        height:auto;
+        padding:2px 0px;
+       justify-content:space-evenly;
+        row-gap:5px;
+    }
+    .nav-add{
+        display:none;
+    }
+    .nav-search{
+    order: 3;               
+    width: 98%;
+    max-width: 100%;
+    margin: 7px 0px;
+    }
+    
+  .nav-language,
+  .sign-in,
+  .nav-Returns,
+  .nav-cart {
+    font-size: 10px;
+  }
+   
+    .nav-cart i{
+       font-size:25px;
+   }
+    .nav-cart{
+        font-size:15px
+    }
+    .nav-logo {
+    width: 100px;
+    padding-left: 0px;
+  }
+   .logo {
+    width: 100%;
+  }
+
+    
+   .panel{
+       height:auto;
+      flex-wrap: nowrap;
+       display:flex;
+       padding:5px 2px;
+       gap: 60px; 
+   }
+ #border2,#border3,#border4,#border5{
+     display:none;
+ }
+    .panel-all{
+        width:70px;
+    }
+   #pdeals{
+       width:300px;
+   }
+   
+    .hero-section {
+    height: 250px;
+    background-position:center;
+  }
+     .hero-msg {
+    width:95% ;
+    height: auto;
+    padding: 5px 7px;
+    font-size: 0.80rem;
+    text-align:center;
+  }
+    .hero-msg a{
+        font-size:0.7rem;
+    }
+   
+  
+    .box{
+        width:98%;
+        height:auto;
+        /* margin-top:13px; */
+    }
+   .box-img{
+       height:280px;
+        background-size:contain;
+       }
+
+  .image-container{
+        width:94%;
+    }
+   .foot-panel2 ul{
+    padding-left:10px;
+   }
+   .foot-panel4{
+       display:flex;
+      }
+    .fp4-c{
+        height:auto;
+        padding:10px 5px 20px 5px;
+    }
+    
 }

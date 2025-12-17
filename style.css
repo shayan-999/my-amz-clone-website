@@ -209,6 +209,9 @@ span{
     padding: 20px 0px 15px;
     margin-top: 10px;
 }
+.mobile-snap {
+  display: contents;
+}
 a{
     text-decoration: none;
     font-size: 17px;
@@ -323,7 +326,7 @@ cursor: pointer;
 }
 /* footer */
 footer{
-    height: 970px;
+    height: auto;
     width: 100%;
     background-color: #232F3E;
 }
@@ -437,18 +440,38 @@ ul a{
 
 /* For responsive design  */
 
-@media(max-width:768px){
+@media(max-width:390px){
     html,body{
         overflow-x: hidden;
     }
     .navbar{
         flex-wrap:wrap;
         height:auto;
-        padding:2px 0px;
-       justify-content:space-evenly;
-        row-gap:5px;
+        display:flex;
+        justify-content:space-between;
     }
-    .nav-add{
+    .nav-logo{
+        order:1;
+        margin-left:5px;
+    }
+    .sign-in{
+        order:2;
+    }
+    .nav-language{
+        order:3
+    }
+    .nav-Returns{
+        order:4;
+    }
+    .nav-cart{
+        order:5;
+    }
+
+     .nav-search{
+    order:6;
+  }
+    
+   .nav-add{
         display:none;
     }
     .nav-search{
@@ -484,17 +507,22 @@ ul a{
        height:auto;
       flex-wrap: nowrap;
        display:flex;
-       padding:5px 2px;
-       gap: 60px; 
+       padding:5px 2px 5px 5px;
+       gap: 10px; 
+       justify-content:space-between;
    }
- #border2,#border3,#border4,#border5{
+ #border2,#border3,#border4,#border5,#border6{
      display:none;
  }
     .panel-all{
         width:70px;
     }
+    #border1{
+        font-size:13px;
+    }
    #pdeals{
        width:300px;
+       font-size:13px;
    }
    
     .hero-section {
@@ -512,7 +540,27 @@ ul a{
         font-size:0.7rem;
     }
    
-  
+    .mobile-snap {
+    display: flex;
+    gap: 10px;
+   overflow-x: scroll;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .mobile-snap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-snap .box {
+    min-width: 98%;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
     .box{
         width:98%;
         height:auto;
@@ -522,19 +570,74 @@ ul a{
        height:280px;
         background-size:contain;
        }
+    .box5{
+        height:auto;
+    }
+    .box5c{
+        font-size:11px;
+    }
 
   .image-container{
-        width:94%;
+        width:92%;
+       /* margin:auto 10px; */
+       padding-left:7px;
+        
+    }
+    
+    .foot-panel1{
+        margin-top:0px;
     }
    .foot-panel2 ul{
     padding-left:10px;
    }
-   .foot-panel4{
-       display:flex;
-      }
-    .fp4-c{
-        height:auto;
-        padding:10px 5px 20px 5px;
+   .footp2-2,
+   .footp2-3,
+   .fp-logo{
+    display: none;
     }
+   
+     .foot-panel3{
+        height:auto;
+       
+    }
+    .fp-other{
+         display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        width:100%;
+        height:auto;
+        gap:10px;
+        padding:10px;
+        margin:auto;
+    }
+    #fpoi{
+        width:45%;
+        justify-content:center;
+        
+    }
+    #fpoi:last-child{
+        width:90%;
+        justify-content:center;
+    }
+   .foot-panel4{
+       display:none;
+      }
+    .foot-panel5{
+        height:auto;
+        margin:20px 0px 0px 0px;
+        
+    }
+    .pages{
+        padding:20px 0px;
+        margin-top:10px;
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .copyright{
+        padding:20px;
+    }
+    
     
 }

@@ -509,15 +509,15 @@ ul a{
        height:auto;
       flex-wrap: nowrap;
        display:flex;
-       padding:5px 2px 5px 5px;
-       gap: 10px; 
+       padding:5px 0px 5px 5px;
+       gap: 7px; 
        justify-content:space-between;
    }
  #border2,#border3,#border4,#border5,#border6{
      display:none;
  }
     .panel-all{
-        width:70px;
+        width:95px;
     }
     #border1{
         font-size:13px;
@@ -643,5 +643,6 @@ ul a{
     
     
 }
+
 
 

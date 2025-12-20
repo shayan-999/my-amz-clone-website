@@ -34,21 +34,25 @@
 }
 /* box2 */
 .nav-add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 5px;
 }
 .add-fir{
    color: #CCCCCC;
    font-size: 0.80rem;
-   margin-left:15px;
+   order: 1;
 }
-.add-sec{
- font-size: 5rem;
- margin-left: 3px;
+#ai-p{
+ font-size: 1rem;
+ order: 3;
+
 }
 .add-icon{
     display: flex;
-    align-items: center;
-    margin-left: 5px;
+   order: 2;
+   align-items: center;
 }
 
 /* box 3 */
@@ -450,35 +454,53 @@ ul a{
         display:flex;
         justify-content:space-between;
     }
-    
     .nav-logo{
         order:1;
         margin-left:5px;
-        flex-shrink: 0;
+        width:45%;
+        /* width:100px; */
+        padding-left:0px;
     }
     .sign-in{
         order:2;
-    }
+        width:45%;
+        text-align:right;
+     
+     }
     .nav-language{
         order:3
     }
     .nav-Returns{
         order:4;
     }
-    .nav-cart{
-        order:5;
-    }
 
-     .nav-search{
-    order:6;
-  }
     
    .nav-add{
-        display:none;
+       order:7;
+       width:100%;
+       display:flex;
+       flex-direction: row;
+       border:2px solid white;
+       gap:10px;
+       background-color:#363b42df;
     }
+    #ai-p{
+        order:3;
+    }
+    .add-fir{
+        order:2;
+        margin:0px;
+        font-size:15px;
+    }
+    .add-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+   
     .nav-search{
-    order: 3;               
-    width: 98%;
+    order:6;    
+    width: 100%;
     max-width: 100%;
     margin: 7px 0px;
     }
@@ -494,14 +516,14 @@ ul a{
        font-size:25px;
    }
     .nav-cart{
+        order:5;
         font-size:15px
     }
-    .nav-logo {
-    width: 100px;
-    padding-left: 0px;
-  }
+   
    .logo {
     width: 100%;
+       background-size:contain;
+       background-repeat:no-repeat;
   }
 
     
@@ -509,15 +531,15 @@ ul a{
        height:auto;
       flex-wrap: nowrap;
        display:flex;
-       padding:5px 0px 5px 5px;
-       gap: 7px; 
+       padding:5px 2px 5px 5px;
+       gap: 10px; 
        justify-content:space-between;
    }
  #border2,#border3,#border4,#border5,#border6{
      display:none;
  }
     .panel-all{
-        width:95px;
+        width:70px;
     }
     #border1{
         font-size:13px;
@@ -597,10 +619,8 @@ ul a{
    .fp-logo{
     display: none;
     }
-   
      .foot-panel3{
         height:auto;
-       
     }
     .fp-other{
          display:flex;
@@ -627,7 +647,6 @@ ul a{
     .foot-panel5{
         height:auto;
         margin:20px 0px 0px 0px;
-        
     }
     .pages{
         padding:20px 0px;
@@ -640,10 +659,4 @@ ul a{
     .copyright{
         padding:20px;
     }
-    
-    
 }
-
-
-
-
